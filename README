@@ -1,0 +1,357 @@
+qucs
+------------------------------------------
+Qucs is a circuit simulator with graphical user interface.  The
+software aims to support all kinds of circuit simulation types,
+e.g. DC, AC, S-parameter and harmonic balance analysis.
+
+Runtime requirements:
+  cygwin-1.5.21-1
+  qt3-3.3.6-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-1
+  automake1.9-1.9.6-1
+  binutils-20060817-1
+  cygport-0.2.7-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gcc-g++-3.4.4-1
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://www.kde.org/
+
+Canonical download:
+  ftp://ftp.kde.org/pub/kde/stable/0.0.10/src/
+
+-------------------------------------------
+
+Build instructions:
+  unpack qucs-0.0.10-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./qucs-0.0.10-X.cygport all
+
+This will create:
+  /usr/src/qucs-0.0.10-X-src.tar.bz2
+  /usr/src/qucs-0.0.10-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/qucs.exe
+  /usr/bin/qucsator.exe
+  /usr/bin/qucsattenuator.exe
+  /usr/bin/qucsconv.exe
+  /usr/bin/qucsdigi
+  /usr/bin/qucsedit.exe
+  /usr/bin/qucsfilter.exe
+  /usr/bin/qucshelp.exe
+  /usr/bin/qucslib.exe
+  /usr/bin/qucstrans.exe
+  /usr/share/doc/Cygwin/qucs-0.0.10.README
+  /usr/share/doc/qucs-0.0.10/AUTHORS
+  /usr/share/doc/qucs-0.0.10/COPYING
+  /usr/share/doc/qucs-0.0.10/ChangeLog
+  /usr/share/doc/qucs-0.0.10/INSTALL
+  /usr/share/doc/qucs-0.0.10/NEWS
+  /usr/share/doc/qucs-0.0.10/README
+  /usr/share/doc/qucs-0.0.10/THANKS
+  /usr/share/doc/qucs-0.0.10/TODO
+  /usr/share/man/man1/qucs.1.gz
+  /usr/share/man/man1/qucsator.1.gz
+  /usr/share/man/man1/qucsattenuator.1.gz
+  /usr/share/man/man1/qucsconv.1.gz
+  /usr/share/man/man1/qucsdigi.1.gz
+  /usr/share/man/man1/qucsedit.1.gz
+  /usr/share/man/man1/qucsfilter.1.gz
+  /usr/share/man/man1/qucshelp.1.gz
+  /usr/share/man/man1/qucslib.1.gz
+  /usr/share/man/man1/qucstrans.1.gz
+  /usr/share/qucs/bitmaps/ac.png
+  /usr/share/qucs/bitmaps/ac_current.png
+  /usr/share/qucs/bitmaps/ac_voltage.png
+  /usr/share/qucs/bitmaps/am_mod.png
+  /usr/share/qucs/bitmaps/amplifier.png
+  /usr/share/qucs/bitmaps/and.png
+  /usr/share/qucs/bitmaps/arrow.png
+  /usr/share/qucs/bitmaps/att_bridge.png
+  /usr/share/qucs/bitmaps/att_pi.png
+  /usr/share/qucs/bitmaps/att_tee.png
+  /usr/share/qucs/bitmaps/attenuator.png
+  /usr/share/qucs/bitmaps/back.png
+  /usr/share/qucs/bitmaps/biast.png
+  /usr/share/qucs/bitmaps/big.button.qucs.xpm
+  /usr/share/qucs/bitmaps/big.qucs.xpm
+  /usr/share/qucs/bitmaps/bottom.png
+  /usr/share/qucs/bitmaps/c_microstrip.png
+  /usr/share/qucs/bitmaps/capacitor.png
+  /usr/share/qucs/bitmaps/cccs.png
+  /usr/share/qucs/bitmaps/ccvs.png
+  /usr/share/qucs/bitmaps/circulator.png
+  /usr/share/qucs/bitmaps/coax.png
+  /usr/share/qucs/bitmaps/coaxial.png
+  /usr/share/qucs/bitmaps/coplanar.png
+  /usr/share/qucs/bitmaps/coupler.png
+  /usr/share/qucs/bitmaps/cpwgap.png
+  /usr/share/qucs/bitmaps/cpwopen.png
+  /usr/share/qucs/bitmaps/cpwshort.png
+  /usr/share/qucs/bitmaps/cpwstep.png
+  /usr/share/qucs/bitmaps/curve.png
+  /usr/share/qucs/bitmaps/dc.png
+  /usr/share/qucs/bitmaps/dc_current.png
+  /usr/share/qucs/bitmaps/dc_voltage.png
+  /usr/share/qucs/bitmaps/dcblock.png
+  /usr/share/qucs/bitmaps/dcfeed.png
+  /usr/share/qucs/bitmaps/deactiv.png
+  /usr/share/qucs/bitmaps/dflipflop.png
+  /usr/share/qucs/bitmaps/digi.png
+  /usr/share/qucs/bitmaps/digi_source.png
+  /usr/share/qucs/bitmaps/diode.png
+  /usr/share/qucs/bitmaps/dmosfet.png
+  /usr/share/qucs/bitmaps/dmosfet_sub.png
+  /usr/share/qucs/bitmaps/editcopy.png
+  /usr/share/qucs/bitmaps/editcut.png
+  /usr/share/qucs/bitmaps/editdelete.png
+  /usr/share/qucs/bitmaps/editpaste.png
+  /usr/share/qucs/bitmaps/ellipse.png
+  /usr/share/qucs/bitmaps/ellipsearc.png
+  /usr/share/qucs/bitmaps/equation.png
+  /usr/share/qucs/bitmaps/fileclose.png
+  /usr/share/qucs/bitmaps/filenew.png
+  /usr/share/qucs/bitmaps/fileopen.png
+  /usr/share/qucs/bitmaps/fileprint.png
+  /usr/share/qucs/bitmaps/filesave.png
+  /usr/share/qucs/bitmaps/filesaveall.png
+  /usr/share/qucs/bitmaps/filledellipse.png
+  /usr/share/qucs/bitmaps/filledrect.png
+  /usr/share/qucs/bitmaps/forward.png
+  /usr/share/qucs/bitmaps/gear.png
+  /usr/share/qucs/bitmaps/gnd.png
+  /usr/share/qucs/bitmaps/ground.png
+  /usr/share/qucs/bitmaps/gyrator.png
+  /usr/share/qucs/bitmaps/hb.png
+  /usr/share/qucs/bitmaps/home.png
+  /usr/share/qucs/bitmaps/inductor.png
+  /usr/share/qucs/bitmaps/inverter.png
+  /usr/share/qucs/bitmaps/iprobe.png
+  /usr/share/qucs/bitmaps/ipulse.png
+  /usr/share/qucs/bitmaps/irect.png
+  /usr/share/qucs/bitmaps/isolator.png
+  /usr/share/qucs/bitmaps/jkflipflop.png
+  /usr/share/qucs/bitmaps/line.png
+  /usr/share/qucs/bitmaps/marker.png
+  /usr/share/qucs/bitmaps/microstrip.png
+  /usr/share/qucs/bitmaps/mirror.png
+  /usr/share/qucs/bitmaps/mirrory.png
+  /usr/share/qucs/bitmaps/mscorner.png
+  /usr/share/qucs/bitmaps/mscoupled.png
+  /usr/share/qucs/bitmaps/mscross.png
+  /usr/share/qucs/bitmaps/msgap.png
+  /usr/share/qucs/bitmaps/msline.png
+  /usr/share/qucs/bitmaps/msmbend.png
+  /usr/share/qucs/bitmaps/msopen.png
+  /usr/share/qucs/bitmaps/msstep.png
+  /usr/share/qucs/bitmaps/mstee.png
+  /usr/share/qucs/bitmaps/msvia.png
+  /usr/share/qucs/bitmaps/mutual.png
+  /usr/share/qucs/bitmaps/mutual2.png
+  /usr/share/qucs/bitmaps/nand.png
+  /usr/share/qucs/bitmaps/next.png
+  /usr/share/qucs/bitmaps/nfet.png
+  /usr/share/qucs/bitmaps/nmosfet.png
+  /usr/share/qucs/bitmaps/nmosfet_sub.png
+  /usr/share/qucs/bitmaps/nodename.png
+  /usr/share/qucs/bitmaps/noise_current.png
+  /usr/share/qucs/bitmaps/noise_ii.png
+  /usr/share/qucs/bitmaps/noise_iv.png
+  /usr/share/qucs/bitmaps/noise_volt.png
+  /usr/share/qucs/bitmaps/noise_vv.png
+  /usr/share/qucs/bitmaps/nor.png
+  /usr/share/qucs/bitmaps/npn.png
+  /usr/share/qucs/bitmaps/npnsub.png
+  /usr/share/qucs/bitmaps/opamp.png
+  /usr/share/qucs/bitmaps/optimize.png
+  /usr/share/qucs/bitmaps/or.png
+  /usr/share/qucs/bitmaps/pfet.png
+  /usr/share/qucs/bitmaps/pm_mod.png
+  /usr/share/qucs/bitmaps/pmosfet.png
+  /usr/share/qucs/bitmaps/pmosfet_sub.png
+  /usr/share/qucs/bitmaps/pnp.png
+  /usr/share/qucs/bitmaps/pnpsub.png
+  /usr/share/qucs/bitmaps/pointer.png
+  /usr/share/qucs/bitmaps/polar.png
+  /usr/share/qucs/bitmaps/polarsmith.png
+  /usr/share/qucs/bitmaps/port.png
+  /usr/share/qucs/bitmaps/previous.png
+  /usr/share/qucs/bitmaps/pshifter.png
+  /usr/share/qucs/bitmaps/quit.png
+  /usr/share/qucs/bitmaps/rebuild.png
+  /usr/share/qucs/bitmaps/rect.png
+  /usr/share/qucs/bitmaps/rect3d.png
+  /usr/share/qucs/bitmaps/rectangle.png
+  /usr/share/qucs/bitmaps/rectwaveguide.png
+  /usr/share/qucs/bitmaps/redo.png
+  /usr/share/qucs/bitmaps/relais.png
+  /usr/share/qucs/bitmaps/resistor.png
+  /usr/share/qucs/bitmaps/resistor_us.png
+  /usr/share/qucs/bitmaps/rotate_ccw.png
+  /usr/share/qucs/bitmaps/rsflipflop.png
+  /usr/share/qucs/bitmaps/smith.png
+  /usr/share/qucs/bitmaps/smithpolar.png
+  /usr/share/qucs/bitmaps/source.png
+  /usr/share/qucs/bitmaps/sparameter.png
+  /usr/share/qucs/bitmaps/spfile1.png
+  /usr/share/qucs/bitmaps/spfile2.png
+  /usr/share/qucs/bitmaps/spfile3.png
+  /usr/share/qucs/bitmaps/spicefile.png
+  /usr/share/qucs/bitmaps/subcircuit.png
+  /usr/share/qucs/bitmaps/subport.png
+  /usr/share/qucs/bitmaps/substrate.png
+  /usr/share/qucs/bitmaps/sweep.png
+  /usr/share/qucs/bitmaps/switch.png
+  /usr/share/qucs/bitmaps/symtrans.png
+  /usr/share/qucs/bitmaps/tabular.png
+  /usr/share/qucs/bitmaps/text.png
+  /usr/share/qucs/bitmaps/textnew.png
+  /usr/share/qucs/bitmaps/timing.png
+  /usr/share/qucs/bitmaps/tiny.button.qucs.xpm
+  /usr/share/qucs/bitmaps/tiny.qucs.xpm
+  /usr/share/qucs/bitmaps/tline.png
+  /usr/share/qucs/bitmaps/top.png
+  /usr/share/qucs/bitmaps/tran.png
+  /usr/share/qucs/bitmaps/transformer.png
+  /usr/share/qucs/bitmaps/truth.png
+  /usr/share/qucs/bitmaps/undo.png
+  /usr/share/qucs/bitmaps/vccs.png
+  /usr/share/qucs/bitmaps/vcvs.png
+  /usr/share/qucs/bitmaps/vhdlfile.png
+  /usr/share/qucs/bitmaps/viewmag+.png
+  /usr/share/qucs/bitmaps/viewmag-.png
+  /usr/share/qucs/bitmaps/viewmag1.png
+  /usr/share/qucs/bitmaps/viewmagfit.png
+  /usr/share/qucs/bitmaps/vprobe.png
+  /usr/share/qucs/bitmaps/vpulse.png
+  /usr/share/qucs/bitmaps/vrect.png
+  /usr/share/qucs/bitmaps/wire.png
+  /usr/share/qucs/bitmaps/xnor.png
+  /usr/share/qucs/bitmaps/xor.png
+  /usr/share/qucs/bitmaps/ysmith.png
+  /usr/share/qucs/docs/de/characters.html
+  /usr/share/qucs/docs/de/index.html
+  /usr/share/qucs/docs/de/inhalttab.png
+  /usr/share/qucs/docs/de/internal.html
+  /usr/share/qucs/docs/de/matching.html
+  /usr/share/qucs/docs/de/mathfunc.html
+  /usr/share/qucs/docs/de/paste.png
+  /usr/share/qucs/docs/de/programs.html
+  /usr/share/qucs/docs/de/qucsdigi.png
+  /usr/share/qucs/docs/de/qucshaupt.png
+  /usr/share/qucs/docs/de/select.png
+  /usr/share/qucs/docs/de/short.html
+  /usr/share/qucs/docs/de/start.html
+  /usr/share/qucs/docs/de/start_digi.html
+  /usr/share/qucs/docs/de/subcircuit.html
+  /usr/share/qucs/docs/de/unterschaltung.png
+  /usr/share/qucs/docs/de/wire.png
+  /usr/share/qucs/docs/en/characters.html
+  /usr/share/qucs/docs/en/contab.png
+  /usr/share/qucs/docs/en/index.html
+  /usr/share/qucs/docs/en/internal.html
+  /usr/share/qucs/docs/en/matching.html
+  /usr/share/qucs/docs/en/mathfunc.html
+  /usr/share/qucs/docs/en/paste.png
+  /usr/share/qucs/docs/en/programs.html
+  /usr/share/qucs/docs/en/qucsdigi.png
+  /usr/share/qucs/docs/en/qucsmain.png
+  /usr/share/qucs/docs/en/select.png
+  /usr/share/qucs/docs/en/short.html
+  /usr/share/qucs/docs/en/start.html
+  /usr/share/qucs/docs/en/start_digi.html
+  /usr/share/qucs/docs/en/subcircuit.html
+  /usr/share/qucs/docs/en/subcircuit.png
+  /usr/share/qucs/docs/en/wire.png
+  /usr/share/qucs/docs/es/contab.png
+  /usr/share/qucs/docs/es/index.html
+  /usr/share/qucs/docs/es/mathfunc.html
+  /usr/share/qucs/docs/es/paste.png
+  /usr/share/qucs/docs/es/programs.html
+  /usr/share/qucs/docs/es/qucsmain.png
+  /usr/share/qucs/docs/es/select.png
+  /usr/share/qucs/docs/es/short.html
+  /usr/share/qucs/docs/es/start.html
+  /usr/share/qucs/docs/es/subcircuit.html
+  /usr/share/qucs/docs/es/subcircuit.png
+  /usr/share/qucs/docs/es/wire.png
+  /usr/share/qucs/docs/fr/contab.png
+  /usr/share/qucs/docs/fr/index.html
+  /usr/share/qucs/docs/fr/mathfunc.html
+  /usr/share/qucs/docs/fr/paste.png
+  /usr/share/qucs/docs/fr/qucsmain.png
+  /usr/share/qucs/docs/fr/select.png
+  /usr/share/qucs/docs/fr/short.html
+  /usr/share/qucs/docs/fr/start.html
+  /usr/share/qucs/docs/fr/subcircuit.html
+  /usr/share/qucs/docs/fr/subcircuit.png
+  /usr/share/qucs/docs/fr/wire.png
+  /usr/share/qucs/docs/ru/characters.html
+  /usr/share/qucs/docs/ru/contab.png
+  /usr/share/qucs/docs/ru/index.html
+  /usr/share/qucs/docs/ru/internal.html
+  /usr/share/qucs/docs/ru/matching.html
+  /usr/share/qucs/docs/ru/mathfunc.html
+  /usr/share/qucs/docs/ru/paste.png
+  /usr/share/qucs/docs/ru/programs.html
+  /usr/share/qucs/docs/ru/qucsdigi.png
+  /usr/share/qucs/docs/ru/qucsmain.png
+  /usr/share/qucs/docs/ru/select.png
+  /usr/share/qucs/docs/ru/short.html
+  /usr/share/qucs/docs/ru/start.html
+  /usr/share/qucs/docs/ru/start_digi.html
+  /usr/share/qucs/docs/ru/subcircuit.html
+  /usr/share/qucs/docs/ru/subcircuit.png
+  /usr/share/qucs/docs/ru/wire.png
+  /usr/share/qucs/lang/qucs_de.qm
+  /usr/share/qucs/lang/qucs_es.qm
+  /usr/share/qucs/lang/qucs_fr.qm
+  /usr/share/qucs/lang/qucs_he.qm
+  /usr/share/qucs/lang/qucs_hu.qm
+  /usr/share/qucs/lang/qucs_it.qm
+  /usr/share/qucs/lang/qucs_jp.qm
+  /usr/share/qucs/lang/qucs_pl.qm
+  /usr/share/qucs/lang/qucs_pt.qm
+  /usr/share/qucs/lang/qucs_ro.qm
+  /usr/share/qucs/lang/qucs_ru.qm
+  /usr/share/qucs/lang/qucs_sv.qm
+  /usr/share/qucs/lang/qucs_tr.qm
+  /usr/share/qucs/lang/qucs_uk.qm
+  /usr/share/qucs/library/Bridges.lib
+  /usr/share/qucs/library/Diodes.lib
+  /usr/share/qucs/library/JFETs.lib
+  /usr/share/qucs/library/LEDs.lib
+  /usr/share/qucs/library/MOSFETs.lib
+  /usr/share/qucs/library/OpAmps.lib
+  /usr/share/qucs/library/Substrates.lib
+  /usr/share/qucs/library/Transistors.lib
+  /usr/share/qucs/library/Z-Diodes.lib
+  /usr/share/qucs/tline/cstrip_kj_1.trc
+  /usr/share/qucs/tline/cstrip_kj_2.trc
+  /usr/share/qucs/tline/hp.trc
+  /usr/share/qucs/tline/ustrip50fr4.trc
+  /usr/share/qucs/tline/ustrip_jansen.trc
+
+------------------
+
+Port Notes:
+
+----- version 0.0.10-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
