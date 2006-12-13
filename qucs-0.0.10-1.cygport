@@ -1,5 +1,7 @@
 inherit qt3
 
+DESCRIPTION="Qt3 circuit simulator"
+HOMEPAGE="http://qucs.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 src_compile() {
