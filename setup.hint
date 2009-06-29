@@ -1,5 +1,5 @@
 category: Graphics KDE
-requires: cygwin qt3
+requires: qt3
 sdesc: "QT circuit simulator"
 ldesc: "Qucs is a circuit simulator with graphical user interface.  The
 software aims to support all kinds of circuit simulation types, e.g. DC,
