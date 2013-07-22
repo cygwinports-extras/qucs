@@ -1,0 +1,34 @@
+inherit qt4
+
+NAME="qucs"
+VERSION=0.0.17
+RELEASE=1
+CATEGORY="Science"
+SUMMARY="Qt circuit simulator"
+DESCRIPTION="Qucs is a circuit simulator with graphical user interface.  The
+software aims to support all kinds of circuit simulation types, e.g. DC,
+AC, S-parameter and harmonic balance analysis."
+HOMEPAGE="http://qucs.sourceforge.net/"
+SRC_URI="mirror://sourceforge/qucs/qucs-${VERSION}.tar.gz"
+PATCH_URI="
+	0.0.10-cygwin.patch
+	0.0.17-doc-vpath.patch
+	0.0.17-system-asco.patch
+"
+
+qucs_REQUIRES="asco freehdl iverilog"
+
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+	find \( -name config.cache -o -name config.log -o -name config.status -o -name Makefile \) -delete
+}
+
+CYGCONF_ARGS="ac_cv_lib_wsock32_main=no"
+export QTDIR=${QT4_QTDIR}
+
+src_install() {
+	cd ${B}
+	cyginstall
+
+	make_desktop_entry qucs "Qucs" /usr/share/qucs/bitmaps/big.qucs.xpm "Education;Science;Electricity;Qt"
+}

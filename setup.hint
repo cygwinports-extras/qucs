@@ -1,6 +1,0 @@
-category: Graphics KDE
-requires: qt3
-sdesc: "QT circuit simulator"
-ldesc: "Qucs is a circuit simulator with graphical user interface.  The
-software aims to support all kinds of circuit simulation types, e.g. DC,
-AC, S-parameter and harmonic balance analysis."

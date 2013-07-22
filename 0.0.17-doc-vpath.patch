@@ -1,0 +1,14 @@
+--- origsrc/qucs-0.0.17/qucs-doc/Makefile.am	2013-06-23 00:59:37.000000000 -0500
++++ src/qucs-0.0.17/qucs-doc/Makefile.am	2013-07-21 18:06:33.411231900 -0500
+@@ -4,9 +4,9 @@ install-data-local:
+ 	$(MKDIR_P) $(DESTDIR)$(datadir)/qucs/docs; \
+ 	for DOC_SUBDIR in report technical tutorial ; do \
+ 		$(MKDIR_P) $(DESTDIR)$(datadir)/qucs/docs/$$DOC_SUBDIR; \
+-		for docfile in $$DOC_SUBDIR/*.pdf ; do \
++		for docfile in $(srcdir)/$$DOC_SUBDIR/*.pdf ; do \
+ 			if test -f $$docfile; then \
+-				$(INSTALL_DATA) $$docfile $(DESTDIR)$(datadir)/qucs/docs/$$docfile; \
++				$(INSTALL_DATA) $$docfile $(DESTDIR)$(datadir)/qucs/docs/$$DOC_SUBDIR/; \
+ 			fi \ 
+ 		done \
+ 	done
